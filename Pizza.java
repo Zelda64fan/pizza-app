@@ -84,5 +84,30 @@ public class Pizza
         totalCost = totalCost+myBase.getBasePrice();
         System.out.println("Your total cost is: " + "$" + totalCost);
     }
+    
+    public void setBase(Base base)
+    {
+        myBase = base;
+    }
+    
+    public Base getBase()
+    {
+        return myBase;
+    }
+    
+    public void addTopping(Topping topping)
+    {
+        myToppings[numberOfToppings++] = topping;
+    }
+    
+    public Topping getTopping(int index)
+    {
+        return myToppings[index];
+    }
+    
+    public int getToppingCount()
+    {
+        return numberOfToppings;
+    }
 }
 

@@ -28,6 +28,13 @@ public class Base
         choicePicked2 = 0; 
     }
     
+    public Base(String baseType, String sauceType, double basePrice)
+    {
+        this.baseType = baseType;
+        this.sauceType = sauceType;
+        this.basePrice = basePrice;
+    }
+    
     public void setBase()
     {
         System.out.println("What base would you like on your pizza?");
